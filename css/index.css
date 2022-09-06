@@ -10,7 +10,6 @@
 nav {
     /* width: 90%; */
     margin: 20px auto;
-    margin-left: 80px;
     display: flex;
     justify-content: space-between;
     /* border: 2px solid black; */
@@ -39,11 +38,13 @@ nav div {
 }
 
 nav img:first-child {
-    width: 85px;
+    width: 95px;
+    margin-left: 70px;
 }
 
 nav img:nth-child(3) {
     width: 20%;
+    /* border: 2px solid black; */
 }
 
 /* Body Styling */
@@ -54,41 +55,31 @@ nav img:nth-child(3) {
     box-sizing: border-box;
 }
 
-
-
-
 /* Left Portion */
 
 .left-section {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0px 0px 0px 40px;
 }
 
+
 .left-section h3 {
-    /* border: 2px solid black; */
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
-    font-weight: 300;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
 .left-section h1 {
     font-family: 'Fredoka One', cursive;
     font-weight: 400;
-    font-size: 65px;
+    font-size: 60px;
     margin-bottom: 30px;
 }
 
-.left-section div {
-    /* border: 2px solid black; */
-}
-
-
 .sub-headlines {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
@@ -96,7 +87,6 @@ nav img:nth-child(3) {
 }
 
 .sub-headline {
-    /* border: 2px solid black; */
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: ;
@@ -116,29 +106,25 @@ nav img:nth-child(3) {
     padding: 5px;
 }
 
-
 .text {
-    /* border: 2px solid black; */
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 200;
     width: 80%;
     margin-bottom: 40px;
 }
-
 
 .action-btns {
     display: flex;
     gap: 20px;
 }
 
-
 .action-btn {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     background-color: #ff5e34;
-    margin: 10px 0px ;
+    margin: 10px 0px;
     color: white;
     border-radius: 30px;
     padding: 10px 35px;
@@ -146,15 +132,11 @@ nav img:nth-child(3) {
 }
 
 
-
-
-/* ------------------------------------------------------------ */
-
+/* ---------------------------------------------- */
 
 /* Right Portion */
 
 .right-section {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -162,7 +144,6 @@ nav img:nth-child(3) {
 }
 
 .headphone-div {
-    /* border: 2px solid black; */
     margin-bottom: 30px;
 }
 
@@ -172,7 +153,6 @@ nav img:nth-child(3) {
     right: 440px;
     width: 140px;
 }
-
 
 .discount-content {
     display: flex;
@@ -189,18 +169,9 @@ img[alt="headphone"] {
     width: 420px;
 }
 
-
-
-
-
-
-
-
-
 .dots {
     display: flex;
     gap: 20px;
-    /* border: 2px solid black; */
     margin-bottom: 20px;
 }
 
@@ -213,31 +184,127 @@ img[alt="headphone"] {
 .yellow-dot {
     background-color: yellow;
 }
+
 .tomato-dot {
     background-color: tomato;
 }
+
 .black-dot {
     background-color: black;
 }
 
 
+/* Media Queries for Mobile */
+
+
+@media screen and (max-width: 1024px) {
+
+    .nav-item,
+    .side-img {
+        display: none;
+    }
+
+    nav {
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin: 20px auto;
+        padding: 0px 25px;
+    }
+
+    nav img:first-child {
+        margin-left: 0px;
+    }
+
+    .ham {
+        width: 30px;
+    }
+
+
+    .intro-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    .left-section {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .left-section h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .left-section h3 {
+        font-weight: 500;
+    }
+
+    .left-section h3 img {
+        width: 60px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .discount-content {
+        position: relative;
+        top: 347px;
+        right: 178px;
+    }
+
+    .brochure {
+        position: relative;
+        left: 120px;
+        top: -30px;
+    }
+
+    .right-section {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (min-width: 1025px) {
 
 
 
 
+    .ham {
+        display: none;
+    }
+
+    .intro-section {
+        margin: 20px 60px;
+    }
+
+    .left-section {
+        padding: 20px;
+    }
+
+    .right-section {
+        padding: 20px;
+    }
 
 
+    .brochure {
+        position: relative;
+        top: -30px;
+        right: -120px;
+    }
+
+    .discount-content {
+        position: relative;
+        right: 178px;
+        top: 348px;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
